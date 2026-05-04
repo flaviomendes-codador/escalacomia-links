@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banco de Prompts · Flávio Mendes</title>
+  <meta name="description" content="10 prompts testados para aplicar IA em negócios de alto ticket. Copie e use agora.">
+  <meta property="og:title" content="Banco de Prompts · Flávio Mendes">
+  <meta property="og:description" content="Prompts testados para aplicar IA em negócios de alto ticket.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230A0A0F'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='monospace' font-size='16' font-weight='700' fill='%2322c55e'%3E%3E_%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+
+  <!-- ── HEADER ── -->
+  <header class="header">
+    <a class="back-link" href="https://escalacomia.com.br/links/">← Flávio Mendes</a>
+
+    <div class="header__hero">
+      <p class="header__eyebrow"><span class="green">$</span> banco_de_prompts<span class="cursor">▋</span></p>
+      <h1 class="header__title">Prompts que funcionam<br>em negócios reais.</h1>
+      <p class="header__sub">Copie, cole e adapte. Testados com GPT-4, Claude e Gemini.</p>
+    </div>
+
+    <div class="stats">
+      <span class="stat"><span class="stat__n green">10</span> prompts</span>
+      <span class="stat__sep">/</span>
+      <span class="stat"><span class="stat__n">3</span> categorias</span>
+      <span class="stat__sep">/</span>
+      <span class="stat">gratuito</span>
+    </div>
+  </header>
+
+  <!-- ── FILTROS ── -->
+  <nav class="filters" aria-label="Filtrar por categoria">
+    <button class="filter is-active" data-filter="todos">todos</button>
+    <button class="filter" data-filter="vendas">vendas</button>
+    <button class="filter" data-filter="operações">operações</button>
+    <button class="filter" data-filter="conteúdo">conteúdo</button>
+  </nav>
+
+  <!-- ── LISTA ── -->
+  <main class="feed" id="feed">
+
+    <!-- ════ 01 ════ -->
+    <article class="entry" data-cat="vendas">
+      <button class="entry__trigger" aria-expanded="false">
+        <span class="entry__num">01</span>
+        <div class="entry__meta">
+          <span class="entry__title">Analise minha concorrência</span>
+          <span class="tag tag--red">vendas</span>
+        </div>
+        <span class="entry__toggle" aria-hidden="true">+</span>
+      </button>
+
+      <div class="entry__panel" hidden>
+        <div class="window">
+          <div class="window__bar">
+            <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window__file">prompt_01.sh</span>
+          </div>
+          <pre class="window__code"><span class="c">// copie, substitua os [colchetes] e cole no seu assistente</span>
+
+Analise os seguintes concorrentes: [cole os links ou descreva].
+
+Para cada um, identifique:
+  1. Proposta de valor principal
+  2. Pontos fracos visíveis (depoimentos, avaliações)
+  3. Público aparente pela linguagem usada
+
+Ao final, sugira 5 diferenciais únicos que posso comunicar
+no meu marketing sem citar os concorrentes diretamente.</pre>
+        </div>
+
+        <div class="entry__actions">
+          <button class="btn-copy" type="button" data-copy>
+            <span class="btn-copy__ic">⎘</span> copiar prompt
+          </button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card__body">
+            <p class="cta-card__label">// próximo nível</p>
+            <p class="cta-card__title">Diagnóstico de IA Aplicada</p>
+            <p class="cta-card__desc">Em 5 dias mapeamos onde IA gera retorno real no seu negócio.</p>
+          </div>
+          <a class="cta-card__btn" href="https://calendly.com/flavio-aiops/diagnostico" target="_blank" rel="noopener noreferrer">
+            Agendar diagnóstico →
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ════ 02 ════ -->
+    <article class="entry" data-cat="vendas">
+      <button class="entry__trigger" aria-expanded="false">
+        <span class="entry__num">02</span>
+        <div class="entry__meta">
+          <span class="entry__title">Reescreva este email de vendas</span>
+          <span class="tag tag--red">vendas</span>
+        </div>
+        <span class="entry__toggle" aria-hidden="true">+</span>
+      </button>
+
+      <div class="entry__panel" hidden>
+        <div class="window">
+          <div class="window__bar">
+            <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window__file">prompt_02.sh</span>
+          </div>
+          <pre class="window__code"><span class="c">// copie, substitua os [colchetes] e cole no seu assistente</span>
+
+Reescreva o email abaixo para soar mais direto, urgente
+e focado no resultado do cliente, não nas características.
+
+Regras:
+  - Zero linguagem corporativa
+  - O leitor decide em 8 segundos se continua lendo
+  - Máximo 150 palavras
+  - CTA na última linha, sem rodeios
+
+[cole o email original aqui]</pre>
+        </div>
+
+        <div class="entry__actions">
+          <button class="btn-copy" type="button" data-copy>
+            <span class="btn-copy__ic">⎘</span> copiar prompt
+          </button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card__body">
+            <p class="cta-card__label">// próximo nível</p>
+            <p class="cta-card__title">Diagnóstico de IA Aplicada</p>
+            <p class="cta-card__desc">Em 5 dias mapeamos onde IA gera retorno real no seu negócio.</p>
+          </div>
+          <a class="cta-card__btn" href="https://calendly.com/flavio-aiops/diagnostico" target="_blank" rel="noopener noreferrer">
+            Agendar diagnóstico →
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ════ 03 ════ -->
+    <article class="entry" data-cat="operações">
+      <button class="entry__trigger" aria-expanded="false">
+        <span class="entry__num">03</span>
+        <div class="entry__meta">
+          <span class="entry__title">SOP de atendimento ao cliente</span>
+          <span class="tag tag--yellow">operações</span>
+        </div>
+        <span class="entry__toggle" aria-hidden="true">+</span>
+      </button>
+
+      <div class="entry__panel" hidden>
+        <div class="window">
+          <div class="window__bar">
+            <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window__file">prompt_03.sh</span>
+          </div>
+          <pre class="window__code"><span class="c">// copie, substitua os [colchetes] e cole no seu assistente</span>
+
+Crie um SOP de atendimento ao cliente para: [produto/serviço].
+
+Inclua:
+  - Script de boas-vindas
+  - As 5 objeções mais comuns com respostas prontas
+  - Protocolo para reclamações e reembolsos
+  - Critérios para escalar ao responsável
+
+Formato: tópicos diretos que qualquer funcionário
+possa seguir sem supervisão.</pre>
+        </div>
+
+        <div class="entry__actions">
+          <button class="btn-copy" type="button" data-copy>
+            <span class="btn-copy__ic">⎘</span> copiar prompt
+          </button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card__body">
+            <p class="cta-card__label">// próximo nível</p>
+            <p class="cta-card__title">Diagnóstico de IA Aplicada</p>
+            <p class="cta-card__desc">Em 5 dias mapeamos onde IA gera retorno real no seu negócio.</p>
+          </div>
+          <a class="cta-card__btn" href="https://calendly.com/flavio-aiops/diagnostico" target="_blank" rel="noopener noreferrer">
+            Agendar diagnóstico →
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ════ 04 ════ -->
+    <article class="entry" data-cat="conteúdo">
+      <button class="entry__trigger" aria-expanded="false">
+        <span class="entry__num">04</span>
+        <div class="entry__meta">
+          <span class="entry__title">Roteiro de Reel 60 segundos</span>
+          <span class="tag tag--green">conteúdo</span>
+        </div>
+        <span class="entry__toggle" aria-hidden="true">+</span>
+      </button>
+
+      <div class="entry__panel" hidden>
+        <div class="window">
+          <div class="window__bar">
+            <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window__file">prompt_04.sh</span>
+          </div>
+          <pre class="window__code"><span class="c">// copie, substitua os [colchetes] e cole no seu assistente</span>
+
+Crie um roteiro de 60 segundos para um Reel sobre [tema].
+
+Estrutura:
+  00–03s   gancho que para o scroll
+  03–15s   problema ou tensão
+  15–50s   3 pontos práticos
+  50–60s   CTA direto
+
+Tom: especialista que respeita o tempo do espectador.
+Sem intros longas, sem enrolação.</pre>
+        </div>
+
+        <div class="entry__actions">
+          <button class="btn-copy" type="button" data-copy>
+            <span class="btn-copy__ic">⎘</span> copiar prompt
+          </button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card__body">
+            <p class="cta-card__label">// próximo nível</p>
+            <p class="cta-card__title">Diagnóstico de IA Aplicada</p>
+            <p class="cta-card__desc">Em 5 dias mapeamos onde IA gera retorno real no seu negócio.</p>
+          </div>
+          <a class="cta-card__btn" href="https://calendly.com/flavio-aiops/diagnostico" target="_blank" rel="noopener noreferrer">
+            Agendar diagnóstico →
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ════ 05 ════ -->
+    <article class="entry" data-cat="conteúdo">
+      <button class="entry__trigger" aria-expanded="false">
+        <span class="entry__num">05</span>
+        <div class="entry__meta">
+          <span class="entry__title">Transforme depoimento em copy</span>
+          <span class="tag tag--green">conteúdo</span>
+        </div>
+        <span class="entry__toggle" aria-hidden="true">+</span>
+      </button>
+
+      <div class="entry__panel" hidden>
+        <div class="window">
+          <div class="window__bar">
+            <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window__file">prompt_05.sh</span>
+          </div>
+          <pre class="window__code"><span class="c">// copie, substitua os [colchetes] e cole no seu assistente</span>
+
+Transforme o depoimento abaixo em 3 versões de copy:
+
+  1. Post de feed longo — resultado antes/depois
+  2. Legenda curta (3 linhas) — para Reel
+  3. Stories — formato pergunta/resposta
+
+Mantenha as palavras do cliente sempre que possível.
+Não invente dados nem resultados.
+
+[cole o depoimento aqui]</pre>
+        </div>
+
+        <div class="entry__actions">
+          <button class="btn-copy" type="button" data-copy>
+            <span class="btn-copy__ic">⎘</span> copiar prompt
+          </button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card__body">
+            <p class="cta-card__label">// próximo nível</p>
+            <p class="cta-card__title">Diagnóstico de IA Aplicada</p>
+            <p class="cta-card__desc">Em 5 dias mapeamos onde IA gera retorno real no seu negócio.</p>
+          </div>
+          <a class="cta-card__btn" href="https://calendly.com/flavio-aiops/diagnostico" target="_blank" rel="noopener noreferrer">
+            Agendar diagnóstico →
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ════ 06 ════ -->
+    <article class="entry" data-cat="operações">
+      <button class="entry__trigger" aria-expanded="false">
+        <span class="entry__num">06</span>
+        <div class="entry__meta">
+          <span class="entry__title">Identifique gargalos no processo</span>
+          <span class="tag tag--yellow">operações</span>
+        </div>
+        <span class="entry__toggle" aria-hidden="true">+</span>
+      </button>
+
+      <div class="entry__panel" hidden>
+        <div class="window">
+          <div class="window__bar">
+            <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window__file">prompt_06.sh</span>
+          </div>
+          <pre class="window__code"><span class="c">// copie, substitua os [colchetes] e cole no seu assistente</span>
+
+Vou descrever um processo do meu negócio. Sua tarefa:
+
+  1. Mapeie cada etapa em formato de fluxo linear
+  2. Identifique os 3 maiores gargalos que causam
+     atraso ou perda de qualidade
+  3. Sugira uma solução implementável para cada gargalo
+
+[descreva o processo em detalhes]</pre>
+        </div>
+
+        <div class="entry__actions">
+          <button class="btn-copy" type="button" data-copy>
+            <span class="btn-copy__ic">⎘</span> copiar prompt
+          </button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card__body">
+            <p class="cta-card__label">// próximo nível</p>
+            <p class="cta-card__title">Diagnóstico de IA Aplicada</p>
+            <p class="cta-card__desc">Em 5 dias mapeamos onde IA gera retorno real no seu negócio.</p>
+          </div>
+          <a class="cta-card__btn" href="https://calendly.com/flavio-aiops/diagnostico" target="_blank" rel="noopener noreferrer">
+            Agendar diagnóstico →
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ════ 07 ════ -->
+    <article class="entry" data-cat="vendas">
+      <button class="entry__trigger" aria-expanded="false">
+        <span class="entry__num">07</span>
+        <div class="entry__meta">
+          <span class="entry__title">10 headlines para anúncio</span>
+          <span class="tag tag--red">vendas</span>
+        </div>
+        <span class="entry__toggle" aria-hidden="true">+</span>
+      </button>
+
+      <div class="entry__panel" hidden>
+        <div class="window">
+          <div class="window__bar">
+            <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window__file">prompt_07.sh</span>
+          </div>
+          <pre class="window__code"><span class="c">// copie, substitua os [colchetes] e cole no seu assistente</span>
+
+Crie 10 headlines para um anúncio de [produto/serviço]
+para [perfil do público]. Varie o ângulo:
+
+  3x  resultado final
+  3x  dor ou problema
+  2x  curiosidade
+  2x  prova social implícita
+
+Máximo 8 palavras cada. Para as 3 melhores, escreva
+também uma frase de subheadline de apoio.</pre>
+        </div>
+
+        <div class="entry__actions">
+          <button class="btn-copy" type="button" data-copy>
+            <span class="btn-copy__ic">⎘</span> copiar prompt
+          </button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card__body">
+            <p class="cta-card__label">// próximo nível</p>
+            <p class="cta-card__title">Diagnóstico de IA Aplicada</p>
+            <p class="cta-card__desc">Em 5 dias mapeamos onde IA gera retorno real no seu negócio.</p>
+          </div>
+          <a class="cta-card__btn" href="https://calendly.com/flavio-aiops/diagnostico" target="_blank" rel="noopener noreferrer">
+            Agendar diagnóstico →
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ════ 08 ════ -->
+    <article class="entry" data-cat="vendas">
+      <button class="entry__trigger" aria-expanded="false">
+        <span class="entry__num">08</span>
+        <div class="entry__meta">
+          <span class="entry__title">Sequência de follow-up (5 emails)</span>
+          <span class="tag tag--red">vendas</span>
+        </div>
+        <span class="entry__toggle" aria-hidden="true">+</span>
+      </button>
+
+      <div class="entry__panel" hidden>
+        <div class="window">
+          <div class="window__bar">
+            <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window__file">prompt_08.sh</span>
+          </div>
+          <pre class="window__code"><span class="c">// copie, substitua os [colchetes] e cole no seu assistente</span>
+
+Escreva 5 emails de follow-up para um lead que demonstrou
+interesse em [produto/serviço] mas não comprou.
+
+  email 01  +24h   reengage suave
+  email 02   +3d   prova social
+  email 03   +7d   objeção mais comum respondida
+  email 04  +14d   escassez ou benefício adicional
+  email 05  +21d   último contato, porta aberta</pre>
+        </div>
+
+        <div class="entry__actions">
+          <button class="btn-copy" type="button" data-copy>
+            <span class="btn-copy__ic">⎘</span> copiar prompt
+          </button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card__body">
+            <p class="cta-card__label">// próximo nível</p>
+            <p class="cta-card__title">Diagnóstico de IA Aplicada</p>
+            <p class="cta-card__desc">Em 5 dias mapeamos onde IA gera retorno real no seu negócio.</p>
+          </div>
+          <a class="cta-card__btn" href="https://calendly.com/flavio-aiops/diagnostico" target="_blank" rel="noopener noreferrer">
+            Agendar diagnóstico →
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ════ 09 ════ -->
+    <article class="entry" data-cat="vendas">
+      <button class="entry__trigger" aria-expanded="false">
+        <span class="entry__num">09</span>
+        <div class="entry__meta">
+          <span class="entry__title">Proposta comercial estruturada</span>
+          <span class="tag tag--red">vendas</span>
+        </div>
+        <span class="entry__toggle" aria-hidden="true">+</span>
+      </button>
+
+      <div class="entry__panel" hidden>
+        <div class="window">
+          <div class="window__bar">
+            <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window__file">prompt_09.sh</span>
+          </div>
+          <pre class="window__code"><span class="c">// copie, substitua os [colchetes] e cole no seu assistente</span>
+
+Monte uma proposta comercial com base nas informações abaixo.
+
+Inclua:
+  - Resumo executivo (1 parágrafo)
+  - Diagnóstico do problema do cliente
+  - Solução proposta com etapas claras
+  - Investimento e condições
+  - Garantias e próximos passos
+
+Tom: consultivo, não vendedor.
+
+[informações do cliente e do projeto]</pre>
+        </div>
+
+        <div class="entry__actions">
+          <button class="btn-copy" type="button" data-copy>
+            <span class="btn-copy__ic">⎘</span> copiar prompt
+          </button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card__body">
+            <p class="cta-card__label">// próximo nível</p>
+            <p class="cta-card__title">Diagnóstico de IA Aplicada</p>
+            <p class="cta-card__desc">Em 5 dias mapeamos onde IA gera retorno real no seu negócio.</p>
+          </div>
+          <a class="cta-card__btn" href="https://calendly.com/flavio-aiops/diagnostico" target="_blank" rel="noopener noreferrer">
+            Agendar diagnóstico →
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ════ 10 ════ -->
+    <article class="entry" data-cat="conteúdo">
+      <button class="entry__trigger" aria-expanded="false">
+        <span class="entry__num">10</span>
+        <div class="entry__meta">
+          <span class="entry__title">Calendário de conteúdo 30 dias</span>
+          <span class="tag tag--green">conteúdo</span>
+        </div>
+        <span class="entry__toggle" aria-hidden="true">+</span>
+      </button>
+
+      <div class="entry__panel" hidden>
+        <div class="window">
+          <div class="window__bar">
+            <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window__file">prompt_10.sh</span>
+          </div>
+          <pre class="window__code"><span class="c">// copie, substitua os [colchetes] e cole no seu assistente</span>
+
+Monte um calendário de conteúdo de 30 dias para [nicho/tema].
+
+Distribuição:
+  40%  educacional
+  30%  bastidores e processo
+  20%  prova social e resultados
+  10%  oferta direta
+
+Para cada post: formato (carrossel/Reel/Stories),
+hook de abertura e ideia central em 1 frase.</pre>
+        </div>
+
+        <div class="entry__actions">
+          <button class="btn-copy" type="button" data-copy>
+            <span class="btn-copy__ic">⎘</span> copiar prompt
+          </button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card__body">
+            <p class="cta-card__label">// próximo nível</p>
+            <p class="cta-card__title">Diagnóstico de IA Aplicada</p>
+            <p class="cta-card__desc">Em 5 dias mapeamos onde IA gera retorno real no seu negócio.</p>
+          </div>
+          <a class="cta-card__btn" href="https://calendly.com/flavio-aiops/diagnostico" target="_blank" rel="noopener noreferrer">
+            Agendar diagnóstico →
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Estado vazio (filtro sem resultado) -->
+    <div class="empty" hidden>
+      <p class="empty__text">// nenhum prompt nessa categoria ainda.</p>
+    </div>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <p class="footer__txt">
+      por <a class="footer__lnk" href="https://escalacomia.com.br/links/">Flávio Mendes</a>
+      &nbsp;·&nbsp; novos prompts toda semana
+    </p>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

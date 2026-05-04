@@ -6,7 +6,6 @@
   <title>Flávio Mendes · IA aplicada em negócios de alto ticket</title>
   <meta name="description" content="Diagnóstico de IA, conteúdo e implementação para negócios que vendem caro.">
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Flávio Mendes · IA aplicada em negócios de alto ticket">
   <meta property="og:description" content="Diagnóstico de IA, conteúdo e implementação para negócios que vendem caro.">
   <meta property="og:image" content="https://escalacomia.com.br/links/assets/flavio.jpg">
@@ -14,16 +13,14 @@
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Favicon: letra F peso 800 sobre fundo preto -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2309090B'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Inter%2C sans-serif' font-size='20' font-weight='800' fill='%23FFFFFF'%3EF%3C/text%3E%3C/svg%3E">
 
-  <!-- Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!--
-    GA4 — descomente e substitua GA-XXXXXXXX pelo ID real
+    GA4: descomente e substitua GA-XXXXXXXX pelo ID real
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA-XXXXXXXX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -38,77 +35,84 @@
 <body>
   <main class="container">
 
-    <!-- Header -->
+    <!-- Hero — foto full-bleed com fade de saída para o branco -->
+    <div class="hero">
+      <img
+        class="hero__img"
+        src="assets/flavio.jpg"
+        alt="Flávio Mendes — Especialista em IA aplicada"
+        loading="eager"
+        fetchpriority="high"
+      >
+      <div class="hero__fade" aria-hidden="true"></div>
+    </div>
+
+    <!-- Identidade -->
     <header class="header">
-      <div class="avatar">
-        <img
-          src="assets/flavio.jpg"
-          alt="Flávio Mendes — Especialista em IA aplicada"
-          width="120"
-          height="120"
-          loading="eager"
-        >
-      </div>
       <h1 class="name">Flávio Mendes</h1>
       <p class="position">IA aplicada em negócios de alto ticket</p>
-      <p class="credibility">+R$&nbsp;14M EM VENDAS GERADAS · SÃO PAULO</p>
+      <p class="credibility">+R$&nbsp;14M em vendas geradas · São Paulo</p>
     </header>
 
     <!-- Cards -->
     <section class="links" aria-label="Links principais">
 
-      <!-- Card 1 — Diagnóstico (ativo, principal) -->
+      <!-- #01 — Diagnóstico (principal, dark) -->
       <a
-        class="card card--active"
+        class="card card--primary"
         href="https://calendly.com/flavio-aiops/diagnostico"
         target="_blank"
         rel="noopener noreferrer"
         data-event="click_diagnostico"
       >
-        <div class="card__content">
-          <span class="card__microcopy">OFERTA · ATIVO</span>
+        <span class="card__num" aria-hidden="true">#01</span>
+        <div class="card__body">
+          <span class="card__label card__label--active">oferta · ativo</span>
           <h2 class="card__title">Diagnóstico de IA Aplicada</h2>
-          <p class="card__description">Em 5 dias você sabe onde IA gera retorno no seu negócio (e onde é desperdício). R$&nbsp;2.997.</p>
+          <p class="card__desc">Em 5 dias você sabe onde IA gera retorno no seu negócio (e onde é desperdício).</p>
         </div>
         <span class="card__arrow" aria-hidden="true">→</span>
       </a>
 
-      <!-- Card 2 — Implementação (bloqueado) -->
+      <!-- #02 — Implementação (bloqueado) -->
       <div class="card card--locked" aria-disabled="true">
-        <div class="card__content">
-          <div class="card__header">
-            <span class="card__microcopy">OFERTA · LISTA DE ESPERA</span>
-            <span class="card__badge" aria-label="Bloqueado: 100% das vagas preenchidas">100% DAS VAGAS PREENCHIDAS</span>
+        <span class="card__num" aria-hidden="true">#02</span>
+        <div class="card__body">
+          <div class="card__top">
+            <span class="card__label">oferta · espera</span>
+            <span class="card__badge" aria-label="Bloqueado: vagas esgotadas">[&nbsp;ESGOTADO&nbsp;]</span>
           </div>
           <h2 class="card__title">Implementação Sob Medida</h2>
-          <p class="card__description">Sistema de IA construído pro seu negócio em 30 dias. Vagas se abrem conforme entregas se concluem.</p>
+          <p class="card__desc">Sistema de IA construído pro seu negócio em 30 dias. Vagas se abrem conforme entregas se concluem.</p>
         </div>
       </div>
 
-      <!-- Card 3 — Parceria (bloqueado) -->
+      <!-- #03 — Parceria (bloqueado) -->
       <div class="card card--locked" aria-disabled="true">
-        <div class="card__content">
-          <div class="card__header">
-            <span class="card__microcopy">PARCERIA · LISTA DE ESPERA</span>
-            <span class="card__badge" aria-label="Bloqueado: 100% das vagas preenchidas">100% DAS VAGAS PREENCHIDAS</span>
+        <span class="card__num" aria-hidden="true">#03</span>
+        <div class="card__body">
+          <div class="card__top">
+            <span class="card__label">parceria · espera</span>
+            <span class="card__badge" aria-label="Bloqueado: vagas esgotadas">[&nbsp;ESGOTADO&nbsp;]</span>
           </div>
           <h2 class="card__title">Parceria Estratégica Mensal</h2>
-          <p class="card__description">Você + meu time + IA, mês a mês. Aceito no máximo 5 contratos simultâneos.</p>
+          <p class="card__desc">Você + meu time + IA, mês a mês.</p>
         </div>
       </div>
 
-      <!-- Card 4 — Site de Dicas (ativo, secundário) -->
+      <!-- #04 — Banco de Prompts (secundário) -->
       <a
-        class="card card--active card--secondary"
-        href="https://escalacomia.com.br/dicas"
+        class="card card--secondary"
+        href="https://escalacomia.com.br/prompts/"
         target="_blank"
         rel="noopener noreferrer"
-        data-event="click_dicas"
+        data-event="click_prompts"
       >
-        <div class="card__content">
-          <span class="card__microcopy">CONTEÚDO · GRATUITO</span>
-          <h2 class="card__title">Site de Dicas de IA</h2>
-          <p class="card__description">Prompts e técnicas práticas pra implementar IA no seu negócio. Atualizado semanalmente.</p>
+        <span class="card__num" aria-hidden="true">#04</span>
+        <div class="card__body">
+          <span class="card__label card__label--active">conteúdo · gratuito</span>
+          <h2 class="card__title">Banco de Prompts</h2>
+          <p class="card__desc">Prompts e técnicas práticas pra implementar IA no seu negócio. Atualizado semanalmente.</p>
         </div>
         <span class="card__arrow" aria-hidden="true">→</span>
       </a>
@@ -117,7 +121,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <hr class="footer__divider">
+      <div class="footer__rule"></div>
       <p class="footer__text">© 2026 · Flávio Mendes</p>
     </footer>
 
