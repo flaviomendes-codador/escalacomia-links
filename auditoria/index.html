@@ -463,7 +463,7 @@ async function submitCapture(e) {
       bloco: qq.bloco,
       valor: answers[i] ?? 0,
     }));
-    await fetch(`${SUPABASE_URL}/rest/v1/respostas`, {
+    const respRes = await fetch(`${SUPABASE_URL}/rest/v1/respostas`, {
       method: 'POST',
       headers: {
         'apikey': SUPABASE_KEY,
@@ -472,6 +472,7 @@ async function submitCapture(e) {
       },
       body: JSON.stringify(respostas),
     });
+    if (!respRes.ok) throw new Error(`respostas: ${await respRes.text()}`);
   } catch (err) {
     // Se Supabase falhar, ainda mostramos o resultado
     console.error('Supabase:', err);
