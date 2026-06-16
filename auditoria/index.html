@@ -437,6 +437,8 @@ async function submitCapture(e) {
   const { q, c, r, total, nivel, gargalo } = calcScores();
 
   try {
+    const leadId = crypto.randomUUID();
+
     // Insert lead
     const leadRes = await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
       method: 'POST',
@@ -444,21 +446,21 @@ async function submitCapture(e) {
         'apikey': SUPABASE_KEY,
         'Authorization': `Bearer ${SUPABASE_KEY}`,
         'Content-Type': 'application/json',
-        'Prefer': 'return=representation',
+        'Prefer': 'return=minimal',
       },
       body: JSON.stringify({
+        id: leadId,
         nome, empresa, whatsapp,
         score_total: total, score_q: q, score_c: c, score_r: r,
         nivel, gargalo, utm_source: getUtm(),
       }),
     });
 
-    if (!leadRes.ok) throw new Error(await leadRes.text());
-    const [lead] = await leadRes.json();
+    if (!leadRes.ok) throw new Error(`leads: ${await leadRes.text()}`);
 
     // Insert respostas
     const respostas = QUESTIONS.map((qq, i) => ({
-      lead_id: lead.id,
+      lead_id: leadId,
       pergunta: i + 1,
       bloco: qq.bloco,
       valor: answers[i] ?? 0,
