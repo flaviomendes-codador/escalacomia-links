@@ -1,0 +1,1 @@
+function e(e){if(typeof window>`u`)return;let t=window;if(typeof t.gtag==`function`){t.gtag(`event`,`whatsapp_group_click`,{location:e});return}t.dataLayer?.push({event:`whatsapp_group_click`,location:e})}var t=`https://chat.whatsapp.com/DfT8LXLlxxv1gVCNYn9iiW`;export{e as n,t};
