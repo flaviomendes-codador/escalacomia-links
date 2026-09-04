@@ -7,6 +7,15 @@ const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
 
 document.querySelectorAll("[data-whatsapp]").forEach((link) => {
   link.href = whatsappUrl;
+
+  link.addEventListener("click", () => {
+    if (typeof window.fbq === "function") {
+      window.fbq("track", link.dataset.metaEvent || "Contact", {
+        content_name: "Qualificação de leads via WhatsApp",
+        contact_method: "WhatsApp",
+      });
+    }
+  });
 });
 
 document.querySelectorAll("[data-carousel]").forEach((carousel) => {

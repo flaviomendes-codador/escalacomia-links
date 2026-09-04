@@ -27,10 +27,41 @@
     <title>Qualificação Inteligente para vender mais pelo WhatsApp</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = true;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = true;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "1375453404770616");
+      fbq("track", "PageView");
+    </script>
+    <!-- End Meta Pixel Code -->
     <script src="script.js" defer></script>
   </head>
 
   <body>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1375453404770616&amp;ev=PageView&amp;noscript=1"
+        alt=""
+      />
+    </noscript>
     <main>
       <section class="hero section" aria-labelledby="hero-title">
         <div class="eyebrow"><span></span> Trabalho, resultados e para quem faz sentido</div>
@@ -240,7 +271,7 @@
         <p class="cta-qualifier">Se esse não é o seu caso e você já percebeu que o problema não é só gerar lead, mas <strong>qualificar melhor quem chega</strong>, então faz sentido conversar.</p>
 
         <div class="cta-wrap">
-          <a class="whatsapp-cta" data-whatsapp target="_blank" rel="noopener noreferrer">CLIQUE AQUI PARA FALAR COMIGO</a>
+          <a class="whatsapp-cta" data-whatsapp data-meta-event="Contact" target="_blank" rel="noopener noreferrer">CLIQUE AQUI PARA FALAR COMIGO</a>
           <div class="cta-arrows" aria-hidden="true">⬆️ ⬆️ ⬆️ ⬆️ ⬆️ ⬆️</div>
           <p>Conversa direta pelo WhatsApp.</p>
         </div>
